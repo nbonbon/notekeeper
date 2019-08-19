@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.notekeeper.NoteActivity">
+    <item
+        android:id="@+id/action_cancel"
+        android:orderInCategory="100"
+        android:title="Cancel" />
+    <item
+        android:id="@+id/action_send_mail"
+        android:orderInCategory="101"
+        android:title="Send as email"
+        app:showAsAction="never" />
+</menu>
+=======
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,3 +24,4 @@
         android:title="@string/action_settings"
         app:showAsAction="never" />
 </menu>
+>>>>>>> 67d4f1fd6335a38ad9519b1e89895886fe650a61

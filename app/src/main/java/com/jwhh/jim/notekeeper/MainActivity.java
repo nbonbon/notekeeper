@@ -103,22 +103,23 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
+        if (id == R.id.nav_notes) {
+            handleSelection("Notes");
+        } else if (id == R.id.nav_courses) {
+            handleSelection("Courses");
         } else if (id == R.id.nav_share) {
-
+            handleSelection("Don't you think you have shared enough");
         } else if (id == R.id.nav_send) {
-
+            handleSelection("Send");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void handleSelection(String message) {
+        View view = findViewById(R.id.list_items);
+        Snackbar.make(view, message, Snackbar.LENGTH_LONG).show();
     }
 }

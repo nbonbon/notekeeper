@@ -12,6 +12,7 @@ import static android.support.test.espresso.Espresso.*;
 import static android.support.test.espresso.matcher.ViewMatchers.*;
 import static android.support.test.espresso.action.ViewActions.*;
 import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard;
+import static junit.framework.Assert.assertEquals;
 import static org.hamcrest.Matchers.*;
 import static android.support.test.espresso.Espresso.pressBack;
 import static android.support.test.espresso.assertion.ViewAssertions.*;

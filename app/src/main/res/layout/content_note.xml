@@ -14,10 +14,6 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="8dp"
         android:max="3"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,14 +31,14 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
 
     <EditText
         android:id="@+id/text_note_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/note_title_hint"
@@ -55,8 +51,6 @@
         android:id="@+id/text_note_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/note_text_hint"
@@ -64,4 +58,15 @@
         app:layout_constraintLeft_toLeftOf="@+id/text_note_title"
         app:layout_constraintRight_toRightOf="@+id/text_note_title"
         app:layout_constraintTop_toBottomOf="@+id/text_note_title"/>
+
+    <view
+        android:id="@+id/module_status"
+        class="com.jwhh.jim.notekeeper.ModuleStatusView"
+        id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_note_text"
+        app:layout_constraintRight_toRightOf="@+id/text_note_text"
+        app:layout_constraintTop_toBottomOf="@+id/text_note_text" />
 </android.support.constraint.ConstraintLayout>

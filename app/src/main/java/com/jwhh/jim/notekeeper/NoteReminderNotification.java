@@ -45,8 +45,6 @@ public class NoteReminderNotification {
                               final String noteTitle, final String noteText, int noteId) {
         final Resources res = context.getResources();
 
-        // This image is used as the notification's large icon (thumbnail).
-        // TODO: Remove this if your notification has no relevant thumbnail.
         final Bitmap picture = BitmapFactory.decodeResource(res, R.drawable.logo);
 
         Intent noteActivityIntent = new Intent(context, NoteActivity.class);
